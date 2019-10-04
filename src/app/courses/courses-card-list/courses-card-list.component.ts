@@ -1,10 +1,11 @@
-import {Component, EventEmitter, Input, OnInit, Output, ViewEncapsulation} from '@angular/core';
-import {Course} from '../model/course';
+import { Component, EventEmitter, Input, OnInit, Output, ViewEncapsulation } from '@angular/core';
+import { Course } from '../model/course';
 import { MatDialog, MatDialogConfig } from '@angular/material/dialog';
-import {CourseDialogComponent} from '../course-dialog/course-dialog.component';
-import {filter, tap} from 'rxjs/operators';
+import { CourseDialogComponent } from '../course-dialog/course-dialog.component';
+import { filter, tap } from 'rxjs/operators';
 
 @Component({
+  // tslint:disable-next-line:component-selector
   selector: 'courses-card-list',
   templateUrl: './courses-card-list.component.html',
   styleUrls: ['./courses-card-list.component.css']

@@ -1,3 +1,4 @@
+// tslint:disable: max-line-length
 export const COURSES: any = {
 
   12: {
@@ -557,5 +558,5 @@ export function findCourseById(courseId: number) {
 }
 
 export function findLessonsForCourse(courseId: number) {
-  return Object.values(LESSONS).filter(lesson => lesson.courseId == courseId);
+  return Object.values(LESSONS).filter(lesson => lesson.courseId === courseId);
 }
